@@ -77,23 +77,23 @@ export default class Calculator extends Component {
         return(
             <div className="calculator">
                 <Display value={this.state.displayValue}/>
-                <Button label="AC" click={this.clearMemory} triple/>
-                <Button label="/" click={this.setOperation} operation/>
-                <Button label="7" click={this.addDigit}/>
-                <Button label="8" click={this.addDigit}/>
-                <Button label="9" click={this.addDigit}/>
-                <Button label="*" click={this.setOperation} operation/>
-                <Button label="4" click={this.addDigit}/>
-                <Button label="5" click={this.addDigit}/>
-                <Button label="6" click={this.addDigit}/>
-                <Button label="-" click={this.setOperation} operation/>
-                <Button label="1" click={this.addDigit}/>
-                <Button label="2" click={this.addDigit}/>
-                <Button label="3" click={this.addDigit}/>
-                <Button label="+" click={this.setOperation} operation/>
-                <Button label="0" click={this.addDigit} double/>
-                <Button label="." click={this.addDigit}/>
-                <Button label="=" click={this.setOperation} operation/>
+                <Button id='ac' label="AC" click={this.clearMemory} triple/>
+                <Button id='/' label="/" click={this.setOperation} operation/>
+                <Button id='7' label="7" click={this.addDigit}/>
+                <Button id='8' label="8" click={this.addDigit}/>
+                <Button id='9' label="9" click={this.addDigit}/>
+                <Button id='*' label="*" click={this.setOperation} operation/>
+                <Button id='4' label="4" click={this.addDigit}/>
+                <Button id='5' label="5" click={this.addDigit}/>
+                <Button id='6' label="6" click={this.addDigit}/>
+                <Button id='-' label="-" click={this.setOperation} operation/>
+                <Button id='1' label="1" click={this.addDigit}/>
+                <Button id='2' label="2" click={this.addDigit}/>
+                <Button id='3' label="3" click={this.addDigit}/>
+                <Button id='+' label="+" click={this.setOperation} operation/>
+                <Button id='0' label="0" click={this.addDigit} double/>
+                <Button id='.' label="." click={this.addDigit}/>
+                <Button id='=' label="=" click={this.setOperation} operation/>
             </div>
         );
     }

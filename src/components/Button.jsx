@@ -10,7 +10,9 @@ export default (props) => {
     return(
         <button 
             onClick={e => props.click && props.click(e.target.innerHTML)}
-            className={classes}>
+            className={classes}
+            {...props}
+            >
             {props.label}
         </button>
         );
